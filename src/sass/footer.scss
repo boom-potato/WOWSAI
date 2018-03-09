@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*重置样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+	body{
+		font-size: 12px;
+		}
+		img { border:none; }
+		ul li{ list-style:none; } 
+		a{text-decoration:none; }
+
+
+
+
+/*footer*/
+.footer_wrap{
+	height: 736px;
+	
+	.footer_top{
+		height: 370px;
+		background: url(http://img2.wowsai.com/themes/mall/wowsai/styles/default/newwowsai/footer_bg.gif) repeat-x top #f6f6f6;
+		box-sizing: border-box;
+		padding-top: 100px;
+		display: flex;
+		justify-content: space-around;
+		.more_wonderful{
+			float: left;
+			p{
+				font-size: 18px;
+				color: #03dedd;
+			}
+			ul{
+				padding-top: 20px;
+			}
+			ul>li{
+
+				line-height: 23px;
+			}
+			ul>li>a{
+				font-size: 14px;
+				color: #5e5e5e;
+			}
+		}
+		.our_promise{
+			float: left;
+			p{
+				font-size: 18px;
+				color: #03dedd;
+			}
+			ul{
+				padding-top: 20px;
+			}
+			ul>li{
+
+				line-height: 23px;
+			}
+			ul>li>a{
+				font-size: 14px;
+				color: #5e5e5e;
+			}
+		}
+		.focus_us{
+			float: left;
+			p{
+				font-size: 18px;
+				color: #03dedd;
+			}
+			ul{
+				padding-top: 20px;
+				
+			}
+			ul>li{
+				line-height: 39px;
+			}
+
+			ul li:nth-child(1){
+				background: url(../../images/share.png) no-repeat;
+				background-position: 0px 0px;
+				}
+			ul li:nth-child(2){
+				background: url(../../images/share.png) no-repeat;
+				background-position: 0px -39px;
+				}
+			ul li:nth-child(3){
+				background: url(../../images/share.png) no-repeat;
+				background-position: 0px -78px;
+				}
+			ul li:nth-child(4){
+				background: url(../../images/share.png) no-repeat;
+				background-position: 0px -118px;
+				}
+			ul li:nth-child(5){
+				background: url(../../images/share.png) no-repeat;
+				background-position: 0px -158px;
+				}
+			ul>li>a{
+				font-size: 14px;
+				color: #5e5e5e;
+				margin-left: 40px;
+			}
+		}
+	}
+	.footer_bottom{
+		height: 366px;
+		background: #03dedd;
+		box-sizing: border-box;
+		padding-top: 56px;
+		.creation{
+			width: 775px;
+			height: 135px;
+			margin: 0 auto;
+			
+			p:nth-child(1){
+				font-size: 28px;
+				color: white;
+				text-align: center;
+				padding-bottom: 56px;
+			}
+			ul{
+				width: 700px;
+				margin: 0 auto;
+				line-height: 30px;
+				display: flex;
+				justify-content: space-around;
+				li>a{
+					font-size: 12px;
+					color: white;
+				}
+			}
+			.footer_code{
+				font-size: 12px;
+				color: white;
+			}
+			
+		}
+	}	
+}

@@ -24,4 +24,8 @@ define(["jquery", "cookie"], function() {
 		if (user)
 			$(".login_reg").html(`<a href="${user}"></a>`);
 	});
+
+	// 加载尾部资源
+	$("footer").load("/html/include/footer.html", function(){
+	});
 });
