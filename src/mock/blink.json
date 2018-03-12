@@ -1,0 +1,11 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"data":[
+			{"id":1, "title":"聚划算 聚奇趣", "img":"images/blink-1.jpg"},
+			{"id":2, "title":"文艺复古超有范", "img":"images/blink-2.jpg"},
+			{"id":3, "title":"享手工 爱孤品",  "img":"images/blink-3.jpg"}
+		]
+	}
+}

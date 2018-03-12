@@ -14,9 +14,11 @@
 <body>
 	<header></header>
 
-	<!-- banner -->
-	<div class="banner">
-		<img src="http://img5.wowsai.com/data/files/shoptopic/201604131142555569.jpg">
+	<!-- container -->
+	<div class="container">
+		
+		
+		
 	</div>
 
 	<!-- main -->
@@ -25,7 +27,7 @@
 		<div class="choose">
 			<h2 class="choose_h2">当日精选</h2>
 			<div class="choose_box">
-				<a href="#" target="_blank">
+				<!-- <a href="#" target="_blank">
 					<div class="choose_box_1">
 						<img src="../images/choose-1.jpg">
 						<p class="choose_p">古典用品桃花润面霜</p>
@@ -45,97 +47,65 @@
 						<img src="../images/choose-4.jpg">
 						<p class="choose_p">有温度的保护木壳</p>
 					</div>
-				</a>
+				</a> -->
 			</div>
 		</div>
 		
+		<!-- 创建模板：显示choose_day商品 -->
+		<script type="text/html" id="choose_template">
+			{{each day as choose}}
+				<a href="" target="_blank">
+					<span style="display: none;" class="id">{{choose.id}}</span>
+					<div class="choose_box_1">
+						<img src="{{choose.img}}" class="img-choose img" alt=""/>
+						<p class="choose_p">{{choose.title}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</script>
 
 		<!-- recommend -->
 		<div class="recommend">
 			<h2 class="recommend_h2">定制推荐</h2>
-			<a href="" target="_blank">
-				<div class="recommend_box_1">
-					<img src="../images/recommend-1.jpg">
-					<p class="recommend_p">JUST2YOU手表定制</p>
-				</div>
-				
-				<div class="recommend_box_2">
-					<img src="../images/recommend-2.jpg">
-					<p class="recommend_p">若爱，请深爱。</p>
-				</div>
-
-				<div class="recommend_box_1">
-					<img src="../images/recommend-3.jpg">
-					<p class="recommend_p">与书为伴，朴素简净</p>
-				</div>
-			</a>
-
-			<a href="#" taget="_blank">
-				<div class="recommend_box_1">
-					<img src="../images/recommend-4.jpg">
-					<p class="recommend_p">紫光檀木红珊瑚吊坠</p>
-				</div>
-				<div class="recommend_box_1">
-					<img src="../images/recommend-5.jpg">
-					<p class="recommend_p">古着范</p>
-				</div>
-				<div class="recommend_box_1">
-					<img src="../images/recommend-6.jpg">
-					<p class="recommend_p">一木一生</p>
-				</div>
-				<div class="recommend_box_1">
-					<img src="../images/recommend-7.jpg">
-					<p class="recommend_p">经典款皮靴</p>
-				</div>
-			</a>
+			<div class="recommend_box">
+								
+			</div>
 		</div>
 
+		<!-- 创建模板：显示recommend商品 -->
+		<script type="text/html" id="recommend_template">
+			{{each recommend as reco}}
+				<a href="" target="_blank">
+					<span style="display: none;" class="id">{{reco.id}}</span>
+					<div class="recommend_box_1">
+						<img src="{{reco.img}}" class="img-reco img" alt=""/>
+						<p class="recommend_p">{{reco.title}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</script>
 
 		<!-- design -->
 		<div class="design">
-			
 			<h2 class="design_h2">设计精选</h2>
-			<a href="#" target="_blank">
-				<div class="design_box_1">
-					<img src="../images/design-1.jpg">
-					<p class="design_p">田园竹编花蕾吊灯</p>
-				</div>
-
-				<div class="design_box_2">
-					<img src="../images/design-2.jpg">
-					<p class="design_p">轻奢！独家手工，独家定制</p>
-				</div>
-
-				<div class="design_box_1">
-					<img src="../images/design-3.jpg">
-					<p class="design_p">复古植鞣皮大款马鞍包</p>
-				</div>
-			</a>
-
-			<a href="#" taget="_blank">
-				<div class="design_box_1">
-					<img src="../images/design-4.jpg">
-					<p class="design_p">超纤皮革软面记事本</p>
-				</div>
-
-				<div class="design_box_1">
-					<img src="../images/design-5.jpg">
-					<p class="design_p">可定制马赛克爱琴海台灯</p>
-				</div>
-
-				<div class="design_box_1">
-					<img src="../images/design-6.jpg">
-					<p class="design_p">随手拿起，走进童话里</p>
-				</div>
-
-				<div class="design_box_1">
-					<img src="../images/design-7.jpg">
-					<p class="design_p">九口山旅行记事本</p>
-				</div>
-			</a>
+			<div class="design_box">
+				
+				 
+			</div>
 		</div>
 
-
+		<!-- 创建模板：显示design商品 -->
+		<script type="text/html" id="design_template">
+			{{each art as design}}
+				<a href="" target="_blank">
+					<span style="display: none;" class="id">{{design.id}}</span>
+					<div class="design_box_1">
+						<img src="{{design.img}}" class="img-design img" alt=""/>
+						<p class="design_p">{{design.title}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</script>
 
 		<!-- blink -->
 		<div class="blink">
@@ -148,24 +118,26 @@
 			</a>
 
 			<div class="blink_p">总有些东西在激励着你</div>
-			<a href="#" taget="_blank">
-				<div class="blink_box_1">
-					<img src="../images/blink-1.jpg">
-					<p class="blink_p">聚划算 聚奇趣</p>
-				</div>
-
-				<div class="blink_box_1">
-					<img src="../images/blink-2.jpg">
-					<p class="blink_p">文艺复古超有范</p>
-				</div>
-
-				<div class="blink_box_1">
-					<img src="../images/blink-3.jpg">
-					<p class="blink_p">享手工 爱孤品</p>
-				</div>
-			</a>
+			<div class="blink_box">
+				
+			</div>
+			
 					
 		</div>
+
+		<!-- 创建模板：显示blink商品 -->
+		<script type="text/html" id="blink_template">
+			{{each blink as prod}}
+				<a href="" target="_blank">
+					<span style="display: none;" class="id">{{prod.id}}</span>
+					<div class="blink_box_1">
+						<img src="{{prod.img}}" class="img-prod img" alt=""/>
+						<p class="blink_p">{{prod.title}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</script>
+
 
 		<!-- originality -->
 		<div class="originality">
@@ -174,34 +146,22 @@
 				更多设计师
 				<img src="../images/sanjiao.png">
 			</p></a>
-
-			<a href="#" taget="_blank">
-				<div class="origin_1">
-				<img src="../images/origin-1.jpg">
+			<div class="origin_box">
+				
 			</div>
-
-			<div class="origin_1">
-				<img src="../images/origin-2.jpg">
-			</div>
-
-			<div class="origin_1">
-				<img src="../images/origin-3.jpg">
-			</div>
-
-			<div class="origin_1">
-				<img src="../images/origin-4.jpg">
-			</div>
-
-			<div class="origin_1">
-				<img src="../images/origin-5.jpg">
-			</div>
-
-			<div class="origin_1">
-				<img src="../images/origin-6.jpg">
-			</div>
-			</a>
-			
 		</div>
+
+		<!-- 创建模板：显示originality -->
+		<script type="text/html" id="origin_template">
+			{{each origin as prod}}
+				<a href="" target="_blank">
+					<span style="display: none;" class="id">{{prod.id}}</span>
+					<div class="origin_1">
+						<img src="{{prod.img}}" class="img-prod img" alt=""/>
+					</div>
+				</a>
+			{{/each}}
+		</script>
 
 		<!-- magazine -->
 		<div class="magazine">
@@ -272,24 +232,21 @@
 		</div>
 		<!-- 内容 -->
 		<div class="join_picBox">
-			<a href="#" target="_blank">
-				<div class="join_us_pic">
-			<img src="../images/joinUs-1.jpg">
-			<div class="join_img_p">定制独一无二的产品</div>
-		</div>
-		
-		<div class="join_us_pic">
-			<img src="../images/joinUs-2.jpg">
-			<div class="join_img_p">购买设计师成品</div>
+			
 		</div>
 
-		<div class="join_us_pic">
-			<img src="../images/joinUs-3.jpg">
-			<div class="join_img_p">出售你的创意和设计</div>
-		</div>
-			</a>
-		</div>
-
+		<!-- 创建模板：显示joinUs -->
+		<script type="text/html" id="joinus_template">
+			{{each joinus as prod}}
+				<a href="" target="_blank">
+					<span style="display: none;" class="id">{{prod.id}}</span>
+					<div class="join_us_pic">
+						<img src="{{prod.img}}" class="img-prod img" alt=""/>
+						<p class="join_img_p">{{prod.title}}</p>						
+					</div>
+				</a>
+			{{/each}}
+		</script>
 
 		<!-- 精灵图 -->
 		<div class="elf">
@@ -317,5 +274,6 @@
 	</div>
 
 	<footer></footer>
+	
 </body>
 </html>

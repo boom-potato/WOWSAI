@@ -1,0 +1,15 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"data":[
+			{"id":1, "title":"JUST2YOU手表定制", "img":"images/recommend-1.jpg"},
+			{"id":2, "title":"若爱，请深爱。", "img":"images/recommend-2.jpg"},
+			{"id":3, "title":"与书为伴，朴素简净",  "img":"images/recommend-3.jpg"},
+			{"id":4, "title":"紫光檀木红珊瑚吊坠",  "img":"images/recommend-4.jpg"},
+			{"id":5, "title":"古着范", "img":"images/recommend-5.jpg"},
+			{"id":6, "title":"一木一生",  "img":"images/recommend-6.jpg"},
+			{"id":7, "title":"经典款皮靴",  "img":"images/recommend-7.jpg"}
+		]
+	}
+}

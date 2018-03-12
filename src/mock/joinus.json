@@ -1,0 +1,12 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"data":[
+			{"id":1, "title":"定制独一无二的产品", "img":"images/joinUs-1.jpg"},
+			{"id":2, "title":"购买设计师成品", "img":"images/joinUs-2.jpg"},
+			{"id":3, "title":"出售你的创意和设计", "img":"images/joinUs-3.jpg"}
+			
+		]
+	}
+}

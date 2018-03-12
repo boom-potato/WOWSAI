@@ -31,7 +31,7 @@
 				<div class="prev">&lt;</div>
 				<div class="next">&gt;</div>`;
 			// 将布局框架结构加入容器中
-			$(container).addClass("xmcarousel").html(content);
+			$(container).addClass("container").html(content);
 			/* 动态添加图片与小圆点的布局 */
 			let liHtml = "", iHtml = "";
 			for (let i = 0, len = this.imgs.length; i < len; i++) {
@@ -49,7 +49,7 @@
 			$(container).css("width", this.width);
 			// 显示第一张图片
 			$(".imgs li:first", container).show();
-			$(".pages i:first", container).addClass("current");
+			$(".pages i:first", container).addClass("point");
 			// 找出所有轮播图片、小圆点
 			this.allImgs = $(".imgs li", container);
 			this.circles = $(".pages i", container);
@@ -64,8 +64,8 @@
 			this.allImgs.eq(this.currentIndex).fadeOut();
 			this.allImgs.eq(this.nextIndex).fadeIn();
 			// 小圆点样式变换
-			this.circles.eq(this.currentIndex).removeClass("current");
-			this.circles.eq(this.nextIndex).addClass("current");
+			this.circles.eq(this.currentIndex).removeClass("point");
+			this.circles.eq(this.nextIndex).addClass("point");
 			// 修改索引
 			this.currentIndex = this.nextIndex;
 			this.nextIndex++;

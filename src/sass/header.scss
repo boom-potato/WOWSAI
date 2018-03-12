@@ -134,7 +134,7 @@ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, l
 			height: 44px;
 			float: right;
 			border-right: 1px solid #f0f0f0;
-			input{
+			.suggest{
 				width: 190px;
 				padding: 0 0 0 10px;
 				height: 42px;
@@ -153,16 +153,6 @@ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, l
 
 			}
 		}
-.fixed { 
-	display: block; 
-	min-height: 1%;
-}
-.fixed::after{
-	content: ".";
-	display: block;
-	clear: both;
-	height: 0;
-	visibility: hidden;
-}
+
 }
 
