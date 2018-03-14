@@ -3,8 +3,65 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cart</title>
+	
+	<link rel="stylesheet" type="text/css" href="/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
 </head>
+<script src="/lib/requirejs/require.js" data-main="/js/index"></script>
 <body>
+	<header></header>
+	
+	
+	<!--空购物车-->
+		<div class="cart cart_empty">
+		    <h1>您的购物车是空的，您可以</h1>
+		    <a href="/index.html"><span>选购商品>></span><span>查看订单>><span>使用兑换券>></span></span></a>
+	    </div>
+	
+	<!--购物车详情-->
+	    <table class="cart cart_table" style="text-align: center;width: 1100px;margin: 0 auto;">
+	    	<thead>
+	    		<tr>
+	    			<td><label><input type="checkbox" class="ck_all">全选</label></td>
+	    			<td>编号</td>
+	    			<td>图片</td>
+	    			<td>标题</td>
+	    			<td>单价</td>
+	    			<td>数量</td>
+	    			<td>小计</td>
+	    			<td>操作</td>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		
+	    	</tbody>
+	    	<tfoot>
+	    		<tr>
+	    			<td>合计</td>
+	    			<td colspan="7">0.00</td>
+	    		</tr>
+	    	</tfoot>
+	    </table>
+	    
+	    <!--模板引擎-->
+	    <script type="text/html" id="cart_template">
+	    	{{each products as prod}}
+	    	<tr>
+	    		<td><input type="checkbox" class="ck_prod" style="width: 20px;height: 20px;outline: none;"></td>
+	    		<td>{{prod.pid}}</td>
+	    		<td><img src="/{{prod.img}}"></td>
+	    		<td>{{prod.title}}</td>
+	    		<td>{{prod.price}}</td>
+	    		<td><button class="minus">-</button><input type="text" value="{{prod.amount}}" size="2" class="amount"><button class="add">+</button></td>
+	    		<td class="sub">{{(prod.amount*prod.price).toFixed(2)}}</td>
+	    		<td><a href="javascript:void(0);" class="del">删除</a></td>
+	    	</tr>
+	    	{{/each}}
+	    </script>
+	
+	<footer></footer>
+	
 	
 </body>
 </html>

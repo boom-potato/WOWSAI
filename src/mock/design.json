@@ -3,13 +3,13 @@
 	"res_error":"",
 	"res_body":{
 		"data":[
-			{"id":1, "title":"田园竹编花蕾吊灯", "img":"images/design-1.jpg"},
-			{"id":2, "title":"轻奢！独家手工，独家定制", "img":"images/design-2.jpg"},
-			{"id":3, "title":"复古植鞣皮大款马鞍包",  "img":"images/design-3.jpg"},
-			{"id":4, "title":"超纤皮革软面记事本",  "img":"images/design-4.jpg"},
-			{"id":5, "title":"可定制马赛克爱琴海台灯", "img":"images/design-5.jpg"},
-			{"id":6, "title":"随手拿起，走进童话里",  "img":"images/design-6.jpg"},
-			{"id":7, "title":"九口山旅行记事本",  "img":"images/design-7.jpg"}
+			{"pid":1, "title":"田园竹编花蕾吊灯", "price":"￥88", "img":"images/design-1.jpg"},
+			{"pid":2, "title":"轻奢！独家手工，独家定制", "price":"￥88", "img":"images/design-2.jpg"},
+			{"pid":3, "title":"复古植鞣皮大款马鞍包", "price":"￥88",  "img":"images/design-3.jpg"},
+			{"pid":4, "title":"超纤皮革软面记事本", "price":"￥88",  "img":"images/design-4.jpg"},
+			{"pid":5, "title":"可定制马赛克爱琴海台灯", "price":"￥88", "img":"images/design-5.jpg"},
+			{"pid":6, "title":"随手拿起，走进童话里", "price":"￥88",  "img":"images/design-6.jpg"},
+			{"pid":7, "title":"九口山旅行记事本", "price":"￥88",  "img":"images/design-7.jpg"}
 		]
 	}
 }

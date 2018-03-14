@@ -64,6 +64,67 @@ require(["config"], function(){
 			$(".join_picBox").html(html);
 		});
 
+/******************************************************/
+/* 加入购物车 */
+//$(function(){
+//	// 事件委派 
+//	// $(".grid_2").delegate("a", "click", function(){
+//	// 	console.log(this);
+//	// 	return false;
+//	// });
+//
+//	$(".choose_box, .recommend_box, .design_box, .blink_box").on("click", "a", function(){
+//		// 当前选购商品对象
+//		let product = {
+//			pid:$(this).find(".pid").text(),
+//			title:$(this).find(".title").text(),
+//			price:$(this).find(".price").text(),
+//			img:$(this).find(".img").attr("src"),
+//			amount:1
+//		};
+////		console.log(product);接下来是把加入购物车的信息保存在cookie中
+//
+//		/* cookie */
+//		$.cookie.json = true;
+//		// 先查找cookie中是否已有保存购物车
+//		let _products = $.cookie("products") || [];
+//			index = exist(product.pid, _products);
+//		if (index === -1) { //新添加商品
+//			_products.push(product);
+//		} else { //原已有添加,则修改数量
+//			_products[index].amount++;
+//		}
+//		
+//		// 重新保存回 cookie中
+//		$.cookie("products", _products, {expires:7, path:"/"});
+//		alert("加入购物车成功啦！");
+//		
+//		/* 显示选购的所有商品数量(首页购物车数量 )*/
+//		let sum = 0;
+//		$.each(_products, function(index,element) {
+//			//console.log(this);
+//			sum += Number(this.amount);
+//		});
+//		$(".header_buycar a .piece").text(sum);
+//		
+//		return false;
+//	});
+//	
+//	//查找指定id的商品在数组中的下标
+//	function exist(id, products) {
+//		for (let i = 0, len = products.length; i < len ; i++) {
+//			if (products[i].pid === id)
+//				return i;
+//		}
+//		
+//		return -1;
+//	}
+//});
+
+
+
+
+
 	});
 });
 

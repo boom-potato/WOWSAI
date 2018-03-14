@@ -17,8 +17,6 @@
 	<!-- container -->
 	<div class="container">
 		
-		
-		
 	</div>
 
 	<!-- main -->
@@ -54,10 +52,11 @@
 		<!-- 创建模板：显示choose_day商品 -->
 		<script type="text/html" id="choose_template">
 			{{each day as choose}}
-				<a href="" target="_blank">
-					<span style="display: none;" class="id">{{choose.id}}</span>
+				<a href="/html/list.html" target="_blank">
+					<span style="display: none;" class="pid">{{choose.id}}</span>
 					<div class="choose_box_1">
 						<img src="{{choose.img}}" class="img-choose img" alt=""/>
+						<span class="price" style="display: none;">{{choose.price}}</span>
 						<p class="choose_p">{{choose.title}}</p>
 					</div>
 				</a>
@@ -75,10 +74,11 @@
 		<!-- 创建模板：显示recommend商品 -->
 		<script type="text/html" id="recommend_template">
 			{{each recommend as reco}}
-				<a href="" target="_blank">
-					<span style="display: none;" class="id">{{reco.id}}</span>
+				<a href="">
+					<span style="display: none;" class="pid">{{reco.id}}</span>
 					<div class="recommend_box_1">
 						<img src="{{reco.img}}" class="img-reco img" alt=""/>
+						<span class="price" style="display: none;">{{reco.price}}</span>
 						<p class="recommend_p">{{reco.title}}</p>
 					</div>
 				</a>
@@ -90,7 +90,6 @@
 			<h2 class="design_h2">设计精选</h2>
 			<div class="design_box">
 				
-				 
 			</div>
 		</div>
 
@@ -98,9 +97,10 @@
 		<script type="text/html" id="design_template">
 			{{each art as design}}
 				<a href="" target="_blank">
-					<span style="display: none;" class="id">{{design.id}}</span>
+					<span style="display: none;" class="pid">{{design.id}}</span>
 					<div class="design_box_1">
 						<img src="{{design.img}}" class="img-design img" alt=""/>
+						<span class="price" style="display: none;">{{design.price}}</span>
 						<p class="design_p">{{design.title}}</p>
 					</div>
 				</a>
@@ -122,16 +122,16 @@
 				
 			</div>
 			
-					
 		</div>
 
 		<!-- 创建模板：显示blink商品 -->
 		<script type="text/html" id="blink_template">
 			{{each blink as prod}}
 				<a href="" target="_blank">
-					<span style="display: none;" class="id">{{prod.id}}</span>
+					<span style="display: none;" class="pid">{{prod.id}}</span>
 					<div class="blink_box_1">
 						<img src="{{prod.img}}" class="img-prod img" alt=""/>
+						<span class="price" style="display: none;">{{prod.price}}</span>
 						<p class="blink_p">{{prod.title}}</p>
 					</div>
 				</a>
@@ -144,7 +144,7 @@
 			<h3 class="originality_h3">他们会让你的生活充满创意</h3>
 			<a href="#" class="originality_a"><p>
 				更多设计师
-				<img src="../images/sanjiao.png">
+				<img src="/images/sanjiao.png">
 			</p></a>
 			<div class="origin_box">
 				
@@ -155,8 +155,9 @@
 		<script type="text/html" id="origin_template">
 			{{each origin as prod}}
 				<a href="" target="_blank">
-					<span style="display: none;" class="id">{{prod.id}}</span>
+					<span style="display: none;" class="pid">{{prod.id}}</span>
 					<div class="origin_1">
+						<span class="price" style="display: none;">{{prod.price}}</span>
 						<img src="{{prod.img}}" class="img-prod img" alt=""/>
 					</div>
 				</a>
@@ -171,14 +172,14 @@
 			<a href="#" class="magazine_a">
 				<p>
 					更多创意资讯
-					<img src="../images/sanjiao.png">
+					<img src="/images/sanjiao.png">
 				</p>
 			</a>
 
 			<div class="magazine_box">
 				<a href="#" target="_blank">
 					<div class="maga_left">
-						<img src="../images/magazine-1.jpg">
+						<img src="/images/magazine-1.jpg">
 						<div class="maga_left_p">
 							不要世纪婚礼~~只想牵手旅行
 						</div>
@@ -187,14 +188,14 @@
 					<div class="maga_right">
 						<div class="maga_top">
 							<div class="maga_pic_2">
-								<img src="../images/magazine-2.jpg">
+								<img src="/images/magazine-2.jpg">
 								<div class="maga_right_p">
 									手工客[闪购频道]购买下单流程
 								</div>
 							</div>
 
 							<div class="maga_pic_2">
-								<img src="../images/magazine-3.jpg">
+								<img src="/images/magazine-3.jpg">
 								<div class="maga_right_p">
 									【枫恋雅阁】原创玉兰花清新系列发饰
 								</div>
@@ -203,14 +204,14 @@
 
 						<div class="maga_bottom">
 							<div class="maga_pic_2">
-								<img src="../images/magazine-4.jpg">
+								<img src="/images/magazine-4.jpg">
 								<div class="maga_right_p">
 									Kouichi Kimura:滋贺乡下住宅
 								</div>
 							</div>
 
 							<div class="maga_pic_2">
-								<img src="../images/magazine-5.jpg">
+								<img src="/images/magazine-5.jpg">
 								<div class="maga_right_p">
 								越南 不妨看一下这家漂亮的餐厅
 								</div>
@@ -239,9 +240,10 @@
 		<script type="text/html" id="joinus_template">
 			{{each joinus as prod}}
 				<a href="" target="_blank">
-					<span style="display: none;" class="id">{{prod.id}}</span>
+					<span style="display: none;" class="pid">{{prod.id}}</span>
 					<div class="join_us_pic">
 						<img src="{{prod.img}}" class="img-prod img" alt=""/>
+						<span class="price" style="display: none;">{{prod.price}}</span>
 						<p class="join_img_p">{{prod.title}}</p>						
 					</div>
 				</a>
@@ -269,7 +271,6 @@
 				<a href="#" target="_blank"><span>Bird</span></a>
 				<a href="#" target="_blank"><span>Joyd</span></a>
 			</div>
-			
 		</div>
 	</div>
 

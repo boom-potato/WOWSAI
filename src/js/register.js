@@ -1,7 +1,7 @@
 $(function(){
 	/* 验证注册的邮箱是否被占用 */
 	let isExist = true; // 标记邮箱是否被占用，true--占用 false--未被占用
-	$(".reg_form :text[name='email']").blur(function(){
+	$(".regist_left :text[name='email']").blur(function(){
 		$.getJSON("/php/check.php", {email: $(this).val()}, function(data){
 			if (data.res_body.status == 0) {
 				isExist = false;
@@ -14,7 +14,7 @@ $(function(){
 	});
 
 	/* 提交注册表单，注册用户 */
-	$(".reg_form").submit(function(){
+	$(".regist_left").submit(function(){
 		if (!isExist) { // 邮箱未被占用，则提交注册信息
 			$.ajax({
 				type : "post",

@@ -3,12 +3,12 @@
 	"res_error":"",
 	"res_body":{
 		"data":[
-			{"id":1, "img":"images/origin-1.jpg"},
-			{"id":2, "img":"images/origin-2.jpg"},
-			{"id":3, "img":"images/origin-3.jpg"},
-			{"id":4, "img":"images/origin-4.jpg"},
-			{"id":5, "img":"images/origin-5.jpg"},
-			{"id":6, "img":"images/origin-6.jpg"}
+			{"pid":1, "price":"￥88", "img":"images/origin-1.jpg"},
+			{"pid":2, "price":"￥88", "img":"images/origin-2.jpg"},
+			{"pid":3, "price":"￥88", "img":"images/origin-3.jpg"},
+			{"pid":4, "price":"￥88", "img":"images/origin-4.jpg"},
+			{"pid":5, "price":"￥88", "img":"images/origin-5.jpg"},
+			{"pid":6, "price":"￥88", "img":"images/origin-6.jpg"}
 		]
 	}
 }

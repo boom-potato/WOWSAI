@@ -3,10 +3,10 @@
 	"res_error":"",
 	"res_body":{
 		"data":[
-			{"id":1, "title":"古典用品桃花润面霜", "img":"images/choose-1.jpg"},
-			{"id":2, "title":"泰银海底总动员脚链", "img":"images/choose-2.jpg"},
-			{"id":3, "title":"黑白纹路时尚钱夹",  "img":"images/choose-3.jpg"},
-			{"id":4, "title":"有温度的保护木壳",  "img":"images/choose-4.jpg"}
+			{"pid":1, "title":"古典用品桃花润面霜", "price":"￥88", "img":"images/choose-1.jpg"},
+			{"pid":2, "title":"泰银海底总动员脚链", "price":"￥88", "img":"images/choose-2.jpg"},
+			{"pid":3, "title":"黑白纹路时尚钱夹", "price":"￥88", "img":"images/choose-3.jpg"},
+			{"pid":4, "title":"有温度的保护木壳","price":"￥88",  "img":"images/choose-4.jpg"}
 		]
 	}
 }
